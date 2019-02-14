@@ -111,7 +111,7 @@ public static int interCount(BinNode<Integer> root)
 {
         	if (root == null)
                     	return 0;
-return 1 + leafCount(root.getLeft()) + leafCount(root.getRight());
+return 1 + interCount(root.getLeft()) + interCount(root.getRight());
 }
 
 public static int interSum(BinNode<Integer> root)
